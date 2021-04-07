@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #191919;
+    color: #F7F7F7;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#watch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 600px;
+    background-image: linear-gradient(45deg, #010101, #191919, #2D2D2D, #3C3C3C, #2D2D2D, #191919, #010101);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    border: 3px solid steelblue;
+}
+
+#date {
+    padding: 5px;
+    background-color: #191919;
+    color: forestgreen;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-size: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#screen {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #191919;
+    color: forestgreen;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-size: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: calc(100% - 100px);
+    text-align: center;
+}
+
+#timers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+#timers svg {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    background-color: #191919;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all linear 0.15s;
+}
+
+#timers svg:hover, .selectedMode{
+    background-color: firebrick!important;
+}
+
+#timers svg path {
+    fill: #F7F7F7;
+}
+
+#screenTimer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0;
+    background-color: #191919;
+    color: forestgreen;
+    text-transform: uppercase;
+    border-radius: 40px;
+    font-size: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: calc(100% - 20px);
+    text-align: center;
+    overflow: hidden;
+}
+
+#start, #stop {
+    font-size: 10px;
+    background-color: #C1C1C1;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #191919;
+    width: 50px;
+    cursor: pointer;
+    transition: all linear 0.15s;
+}
+
+#start:hover, #stop:hover {
+    background-color: #2D2D2D;
+    color: #F7F7F7;
+}
+#modeScreen {
+    font-size: 18px;
+    width: calc(100% - 100px);
+    text-align: center;
+}
+
